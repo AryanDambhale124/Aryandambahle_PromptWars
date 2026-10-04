@@ -1,0 +1,6 @@
+.env
+.env.local
+api/key.txt
+.vercel
+node_modules
+dist

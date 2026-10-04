@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #070813;
+  --color-violet: #8b7cff;
+  --color-cyan: #5ce1e6;
+}
+
+html { background: var(--color-ink); scroll-behavior: smooth; }
+body { margin: 0; font-family: var(--font-sans); color: #e8eaf6; min-height: 100vh; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--color-cyan); outline-offset: 3px; }
+.glass { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.09); backdrop-filter: blur(14px); box-shadow: 0 20px 60px -30px rgba(139,124,255,.45); }
+.lab-bg {
+  background:
+    radial-gradient(60rem 30rem at 15% -10%, rgba(139,124,255,.22), transparent 60%),
+    radial-gradient(50rem 28rem at 95% 10%, rgba(92,225,230,.14), transparent 60%),
+    var(--color-ink);
+}
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
